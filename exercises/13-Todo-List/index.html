@@ -8,18 +8,21 @@
 		<title>TODO LIST</title>
 	</head>
 	<body>
-		<div id="container">
+		<div id="titleContainer" class="w-50">
 			<h1 class="todo-header">To do List</h1>
-			<input id="addToDo" type="text" placeholder="Add to do here" />
-			<ul>
+		</div>
+		<div id="container">
+			<div id="toDoInput">
+				<input id="addToDo" type="text" placeholder="Add a task" />
+				<button>Send</button>
+			</div>
+			<ul id="toDoList">
 				<li>
-					<span><i class="fa fa-trash"></i></span> Eat
-				</li>
-				<li>
-					<span><i class="fa fa-trash"></i></span> Drink
-				</li>
-				<li>
-					<span><i class="fa fa-trash"></i></span> Sleep
+					<div class="d-flex" ">
+						<div id="blue" style="margin-left:10px;width:80%; height:100px;display:flex; align-items: center;">Sleep</div>
+						<div id="red" style="width:20%; height:100px; display:flex; justify-content: center; align-items: center;"><span class="fa fa-trash"></span>
+					</div>
+					
 				</li>
 			</ul>
 		</div>
